@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:05,200
+Hello there. This is a test of the intelligent closed caption generation system.
+
+2
+00:00:06,000 --> 00:00:10,000
+I am testing the automatic speech recognition capabilities.
+
