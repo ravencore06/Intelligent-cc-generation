@@ -66,15 +66,15 @@ According to the project specifications, the Intelligent CC tool consists of thr
 
 ### Chosen Demo: Module 3 (CC Decision Engine & SRT Output)
 
-For this Pull Request, we have focused on demonstrating a working implementation of **Module 3**. 
+For this Pull Request, I have focused on demonstrating a working implementation of **Module 3**. 
 
-**Our Approach:**
-We built an automated pipeline leveraging **OpenAI's Whisper** model to extract audio from the video and generate precise, timestamped SubRip (`.srt`) files. Whisper serves as our core ASR (Automatic Speech Recognition) engine due to its state-of-the-art accuracy and robust handling of background noise. The pipeline is designed modularly, ensuring that future outputs from Module 1 and Module 2 can be seamlessly integrated into the final subtitle generation logic.
+**My Approach:**
+I built an automated pipeline leveraging **OpenAI's Whisper** model to extract audio from the video and generate precise, timestamped SubRip (`.srt`) files. Whisper serves as our core ASR (Automatic Speech Recognition) engine due to its state-of-the-art accuracy and robust handling of background noise. The pipeline is designed modularly, ensuring that future outputs from Module 1 and Module 2 can be seamlessly integrated into the final subtitle generation logic.
 
 ## Known Limitations & Next Steps
 
 **Current Limitations:**
-- **Missing Visual/Contextual Signals:** Currently, our Module 3 implementation relies solely on the audio track for transcription. It does not yet incorporate the visual signals (Module 2) or the distinct sound event tags (Module 1).
+- **Missing Visual/Contextual Signals:** Currently, my Module 3 implementation relies solely on the audio track for transcription. It does not yet incorporate the visual signals (Module 2) or the distinct sound event tags (Module 1).
 - **Processing Time:** Processing long videos can be computationally expensive depending on the chosen Whisper model size (`tiny`, `base`, `small`, etc.) and the available hardware.
 
 **Areas to Improve Next (Integration):**
