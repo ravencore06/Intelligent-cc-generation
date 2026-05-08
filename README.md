@@ -1,87 +1,51 @@
-# Intelligent CC Generation
+# Module 1: Sound Event Detection
 
-An automated Closed Caption (CC) generation pipeline leveraging OpenAI's Whisper model.
+Detects environmental sounds (car horns, gunshots, dog barks, sirens, etc.)
+from audio using YAMNet + MediaPipe. Outputs events with timestamps and
+confidence scores.
 
-## Overview
-
-This project provides a streamlined pipeline to extract audio from video files and generate precise, timestamped SubRip (`.srt`) subtitles using state-of-the-art automatic speech recognition (ASR). It includes zero-configuration FFmpeg integration for seamless cross-platform execution.
-
-## Tech Stack
-
-- **Python 3.10+**
-- **OpenAI Whisper:** Core ASR engine
-- **MoviePy:** Media processing
-- **Imageio-FFmpeg:** Bundled FFmpeg binaries
-
-## Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/Intelligent-cc-generation.git
-   cd Intelligent-cc-generation
-   ```
-
-2. **Install dependencies:**
-   We recommend isolating dependencies using a virtual environment (`venv`).
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Usage
-
-Place your source video in the project directory and execute the main pipeline:
+## Quick Start
 
 ```bash
-python main.py <video_filename.mp4>
+pip install -r requirements.txt
+python create_demo_samples.py   # downloads sample audio clips
+python demo_module1.py --all     # run detection on all samples
+python demo_module1.py my_file.wav   # or your own audio/video
 ```
 
-**Options:**
-- `--model <size>`: Specify the Whisper model size (`tiny`, `base`, `small`, `medium`, `large`). Defaults to `tiny`.
-  ```bash
-  python main.py video.mp4 --model base
-  ```
+## Example Output
 
-*Generated subtitles are automatically saved to the `output/` directory.*
+```
+  car_horn.wav
+  Duration: 5.0s
+    [0.0s] Vehicle horn, car horn, honking     (80%) <<<
+    => Detected: Vehicle horn, car horn, honking
 
-## Project Structure
-
-```text
-Intelligent-cc-generation/
-├── main.py                     # CLI orchestration and pipeline entry point
-├── requirements.txt            # Python package dependencies
-└── src/                        # Core application modules
-    ├── audio_extractor.py      # Audio extraction logic (MoviePy)
-    ├── speech_to_text.py       # Whisper ASR integration & local FFmpeg handling
-    └── subtitle_generator.py   # Subtitle formatting and generation (.srt)
+  gunshot.wav
+  Duration: 5.0s
+    [1.9s] Explosion                           (89%) <<<
+    [1.9s] Gunshot, gunfire                    (33%) <<<
+    => Detected: Explosion, Gunshot, gunfire
 ```
 
+## Files
 
+| File | What it does |
+|------|-------------|
+| `sound_event_detection.py` | Core SED module (SoundEventDetector class) |
+| `demo_module1.py` | CLI demo runner |
+| `create_demo_samples.py` | Downloads sample audio clips (ESC-50, CC-BY-NC) |
+| `yamnet.tflite` | YAMNet model (auto-downloaded) |
 
-## Pipeline Modules Overview
+## How it Works
 
-According to the project specifications, the Intelligent CC tool consists of three main modules:
-- **Module 1 – Sound Event Detection** (with confidence scores & timestamps)
-- **Module 2 – Speaker/Scene Reaction Detection** (Frame extraction + visual analysis)
-- **Module 3 – CC Decision Engine & SRT/SLS Output** (Combined audio + visual signals -> CC file generation)
+1. Load audio, run YAMNet on 0.975s windows
+2. Filter by confidence (default >= 15%)
+3. Merge adjacent same-class events
+4. Output results (console + JSON)
 
-### Chosen Demo: Module 3 (CC Decision Engine & SRT Output)
+## Limitations
 
-For this Pull Request, I have focused on demonstrating a working implementation of **Module 3**. 
-
-**My Approach:**
-I built an automated pipeline leveraging **OpenAI's Whisper** model to extract audio from the video and generate precise, timestamped SubRip (`.srt`) files. Whisper serves as our core ASR (Automatic Speech Recognition) engine due to its state-of-the-art accuracy and robust handling of background noise. The pipeline is designed modularly, ensuring that future outputs from Module 1 and Module 2 can be seamlessly integrated into the final subtitle generation logic.
-
-## Known Limitations & Next Steps
-
-**Current Limitations:**
-- **Missing Visual/Contextual Signals:** Currently, my Module 3 implementation relies solely on the audio track for transcription. It does not yet incorporate the visual signals (Module 2) or the distinct sound event tags (Module 1).
-- **Processing Time:** Processing long videos can be computationally expensive depending on the chosen Whisper model size (`tiny`, `base`, `small`, etc.) and the available hardware.
-
-**Areas to Improve Next (Integration):**
-- **Integrate Module 1 (Sound Events):** Merge Sound Event Detection outputs into the `.srt` generation to include closed-captioning for important non-speech sounds (e.g., `[door slams]`, `[dog barks]`).
-- **Integrate Module 2 (Visual Context):** Use visual signals (e.g., Speaker/Scene Reaction Detection) to help the decision engine differentiate between multiple speakers and provide contextual cues when someone is speaking off-camera.
-- **Performance Optimization:** Explore faster Whisper implementations (like `faster-whisper` or `whisper.cpp`) to reduce processing time for larger media files.
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for details.
+- ESC-50 samples are CC-BY-NC (not for commercial use)
+- YAMNet is limited to 521 AudioSet classes
+- No video modality integration yet
