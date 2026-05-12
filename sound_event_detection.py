@@ -196,6 +196,7 @@ class SoundEventDetector:
                 fps=16000,
                 nbytes=2,
                 codec="pcm_s16le",
+                ffmpeg_params=["-ac", "1"],
                 logger=None,
             )
 

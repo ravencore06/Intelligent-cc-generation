@@ -1,0 +1,699 @@
+{
+  "source_file": "Avengers vs Ultron.mp4",
+  "duration_seconds": 204.32,
+  "events": [
+    {
+      "start_time": 0.0,
+      "end_time": 0.975,
+      "sound_class": "Music",
+      "confidence": 0.414,
+      "class_index": 132
+    },
+    {
+      "start_time": 0.0,
+      "end_time": 0.975,
+      "sound_class": "Speech",
+      "confidence": 0.801,
+      "class_index": 0
+    },
+    {
+      "start_time": 0.975,
+      "end_time": 1.95,
+      "sound_class": "Music",
+      "confidence": 0.332,
+      "class_index": 132
+    },
+    {
+      "start_time": 0.975,
+      "end_time": 1.95,
+      "sound_class": "Speech",
+      "confidence": 0.941,
+      "class_index": 0
+    },
+    {
+      "start_time": 1.95,
+      "end_time": 2.925,
+      "sound_class": "Music",
+      "confidence": 0.668,
+      "class_index": 132
+    },
+    {
+      "start_time": 1.95,
+      "end_time": 3.9,
+      "sound_class": "Speech",
+      "confidence": 0.969,
+      "class_index": 0
+    },
+    {
+      "start_time": 3.9,
+      "end_time": 4.875,
+      "sound_class": "Music",
+      "confidence": 0.262,
+      "class_index": 132
+    },
+    {
+      "start_time": 3.9,
+      "end_time": 4.875,
+      "sound_class": "Speech",
+      "confidence": 0.801,
+      "class_index": 0
+    },
+    {
+      "start_time": 6.825,
+      "end_time": 7.8,
+      "sound_class": "Music",
+      "confidence": 0.332,
+      "class_index": 132
+    },
+    {
+      "start_time": 6.825,
+      "end_time": 7.8,
+      "sound_class": "Smash, crash",
+      "confidence": 0.199,
+      "class_index": 463
+    },
+    {
+      "start_time": 8.775,
+      "end_time": 9.75,
+      "sound_class": "Music",
+      "confidence": 0.5,
+      "class_index": 132
+    },
+    {
+      "start_time": 11.7,
+      "end_time": 12.675,
+      "sound_class": "Smash, crash",
+      "confidence": 0.332,
+      "class_index": 463
+    },
+    {
+      "start_time": 12.675,
+      "end_time": 15.6,
+      "sound_class": "Music",
+      "confidence": 0.891,
+      "class_index": 132
+    },
+    {
+      "start_time": 14.625,
+      "end_time": 15.6,
+      "sound_class": "Speech",
+      "confidence": 0.738,
+      "class_index": 0
+    },
+    {
+      "start_time": 16.575,
+      "end_time": 17.55,
+      "sound_class": "Music",
+      "confidence": 0.5,
+      "class_index": 132
+    },
+    {
+      "start_time": 16.575,
+      "end_time": 17.55,
+      "sound_class": "Speech",
+      "confidence": 0.668,
+      "class_index": 0
+    },
+    {
+      "start_time": 17.55,
+      "end_time": 18.525,
+      "sound_class": "Music",
+      "confidence": 0.262,
+      "class_index": 132
+    },
+    {
+      "start_time": 17.55,
+      "end_time": 18.525,
+      "sound_class": "Speech",
+      "confidence": 0.852,
+      "class_index": 0
+    },
+    {
+      "start_time": 18.525,
+      "end_time": 19.5,
+      "sound_class": "Music",
+      "confidence": 0.414,
+      "class_index": 132
+    },
+    {
+      "start_time": 18.525,
+      "end_time": 24.375,
+      "sound_class": "Speech",
+      "confidence": 0.941,
+      "class_index": 0
+    },
+    {
+      "start_time": 24.375,
+      "end_time": 25.35,
+      "sound_class": "Fusillade",
+      "confidence": 0.262,
+      "class_index": 423
+    },
+    {
+      "start_time": 24.375,
+      "end_time": 25.35,
+      "sound_class": "Gunshot, gunfire",
+      "confidence": 0.199,
+      "class_index": 421
+    },
+    {
+      "start_time": 26.325,
+      "end_time": 27.3,
+      "sound_class": "Fusillade",
+      "confidence": 0.199,
+      "class_index": 423
+    },
+    {
+      "start_time": 28.275,
+      "end_time": 29.25,
+      "sound_class": "Explosion",
+      "confidence": 0.262,
+      "class_index": 420
+    },
+    {
+      "start_time": 28.275,
+      "end_time": 29.25,
+      "sound_class": "Fusillade",
+      "confidence": 0.199,
+      "class_index": 423
+    },
+    {
+      "start_time": 28.275,
+      "end_time": 29.25,
+      "sound_class": "Gunshot, gunfire",
+      "confidence": 0.199,
+      "class_index": 421
+    },
+    {
+      "start_time": 29.25,
+      "end_time": 33.15,
+      "sound_class": "Speech",
+      "confidence": 0.98,
+      "class_index": 0
+    },
+    {
+      "start_time": 36.075,
+      "end_time": 38.025,
+      "sound_class": "Music",
+      "confidence": 0.5,
+      "class_index": 132
+    },
+    {
+      "start_time": 38.025,
+      "end_time": 39.0,
+      "sound_class": "Speech",
+      "confidence": 0.262,
+      "class_index": 0
+    },
+    {
+      "start_time": 39.975,
+      "end_time": 40.95,
+      "sound_class": "Music",
+      "confidence": 0.414,
+      "class_index": 132
+    },
+    {
+      "start_time": 44.85,
+      "end_time": 45.825,
+      "sound_class": "Explosion",
+      "confidence": 0.199,
+      "class_index": 420
+    },
+    {
+      "start_time": 44.85,
+      "end_time": 45.825,
+      "sound_class": "Gunshot, gunfire",
+      "confidence": 0.262,
+      "class_index": 421
+    },
+    {
+      "start_time": 45.825,
+      "end_time": 46.8,
+      "sound_class": "Vehicle",
+      "confidence": 0.199,
+      "class_index": 294
+    },
+    {
+      "start_time": 49.725,
+      "end_time": 62.4,
+      "sound_class": "Speech",
+      "confidence": 0.969,
+      "class_index": 0
+    },
+    {
+      "start_time": 63.375,
+      "end_time": 64.35,
+      "sound_class": "Speech",
+      "confidence": 0.984,
+      "class_index": 0
+    },
+    {
+      "start_time": 64.35,
+      "end_time": 65.325,
+      "sound_class": "Walk, footsteps",
+      "confidence": 0.332,
+      "class_index": 48
+    },
+    {
+      "start_time": 65.325,
+      "end_time": 66.3,
+      "sound_class": "Speech",
+      "confidence": 0.738,
+      "class_index": 0
+    },
+    {
+      "start_time": 66.3,
+      "end_time": 67.275,
+      "sound_class": "Roar",
+      "confidence": 0.262,
+      "class_index": 105
+    },
+    {
+      "start_time": 66.3,
+      "end_time": 67.275,
+      "sound_class": "Roaring cats (lions, tigers)",
+      "confidence": 0.262,
+      "class_index": 104
+    },
+    {
+      "start_time": 67.275,
+      "end_time": 68.25,
+      "sound_class": "Car",
+      "confidence": 0.262,
+      "class_index": 301
+    },
+    {
+      "start_time": 67.275,
+      "end_time": 68.25,
+      "sound_class": "Motor vehicle (road)",
+      "confidence": 0.262,
+      "class_index": 300
+    },
+    {
+      "start_time": 67.275,
+      "end_time": 68.25,
+      "sound_class": "Vehicle",
+      "confidence": 0.414,
+      "class_index": 294
+    },
+    {
+      "start_time": 69.225,
+      "end_time": 70.2,
+      "sound_class": "Vehicle",
+      "confidence": 0.332,
+      "class_index": 294
+    },
+    {
+      "start_time": 71.175,
+      "end_time": 72.15,
+      "sound_class": "Music",
+      "confidence": 0.199,
+      "class_index": 132
+    },
+    {
+      "start_time": 72.15,
+      "end_time": 73.125,
+      "sound_class": "Vehicle",
+      "confidence": 0.199,
+      "class_index": 294
+    },
+    {
+      "start_time": 74.1,
+      "end_time": 75.075,
+      "sound_class": "Thump, thud",
+      "confidence": 0.262,
+      "class_index": 454
+    },
+    {
+      "start_time": 75.075,
+      "end_time": 76.05,
+      "sound_class": "Explosion",
+      "confidence": 0.262,
+      "class_index": 420
+    },
+    {
+      "start_time": 75.075,
+      "end_time": 76.05,
+      "sound_class": "Fusillade",
+      "confidence": 0.199,
+      "class_index": 423
+    },
+    {
+      "start_time": 75.075,
+      "end_time": 76.05,
+      "sound_class": "Gunshot, gunfire",
+      "confidence": 0.262,
+      "class_index": 421
+    },
+    {
+      "start_time": 76.05,
+      "end_time": 77.025,
+      "sound_class": "Explosion",
+      "confidence": 0.5,
+      "class_index": 420
+    },
+    {
+      "start_time": 76.05,
+      "end_time": 77.025,
+      "sound_class": "Fusillade",
+      "confidence": 0.586,
+      "class_index": 423
+    },
+    {
+      "start_time": 76.05,
+      "end_time": 77.025,
+      "sound_class": "Gunshot, gunfire",
+      "confidence": 0.668,
+      "class_index": 421
+    },
+    {
+      "start_time": 76.05,
+      "end_time": 77.025,
+      "sound_class": "Machine gun",
+      "confidence": 0.199,
+      "class_index": 422
+    },
+    {
+      "start_time": 78.975,
+      "end_time": 79.95,
+      "sound_class": "Arrow",
+      "confidence": 0.414,
+      "class_index": 452
+    },
+    {
+      "start_time": 78.975,
+      "end_time": 79.95,
+      "sound_class": "Thump, thud",
+      "confidence": 0.5,
+      "class_index": 454
+    },
+    {
+      "start_time": 80.925,
+      "end_time": 81.9,
+      "sound_class": "Breaking",
+      "confidence": 0.332,
+      "class_index": 464
+    },
+    {
+      "start_time": 80.925,
+      "end_time": 81.9,
+      "sound_class": "Glass",
+      "confidence": 0.332,
+      "class_index": 435
+    },
+    {
+      "start_time": 80.925,
+      "end_time": 81.9,
+      "sound_class": "Shatter",
+      "confidence": 0.5,
+      "class_index": 437
+    },
+    {
+      "start_time": 81.9,
+      "end_time": 82.875,
+      "sound_class": "Whoosh, swoosh, swish",
+      "confidence": 0.199,
+      "class_index": 453
+    },
+    {
+      "start_time": 83.85,
+      "end_time": 84.825,
+      "sound_class": "Thump, thud",
+      "confidence": 0.199,
+      "class_index": 454
+    },
+    {
+      "start_time": 84.825,
+      "end_time": 85.8,
+      "sound_class": "Explosion",
+      "confidence": 0.199,
+      "class_index": 420
+    },
+    {
+      "start_time": 84.825,
+      "end_time": 85.8,
+      "sound_class": "Fusillade",
+      "confidence": 0.332,
+      "class_index": 423
+    },
+    {
+      "start_time": 84.825,
+      "end_time": 85.8,
+      "sound_class": "Gunshot, gunfire",
+      "confidence": 0.332,
+      "class_index": 421
+    },
+    {
+      "start_time": 84.825,
+      "end_time": 85.8,
+      "sound_class": "Thump, thud",
+      "confidence": 0.199,
+      "class_index": 454
+    },
+    {
+      "start_time": 85.8,
+      "end_time": 86.775,
+      "sound_class": "Arrow",
+      "confidence": 0.414,
+      "class_index": 452
+    },
+    {
+      "start_time": 85.8,
+      "end_time": 86.775,
+      "sound_class": "Thump, thud",
+      "confidence": 0.414,
+      "class_index": 454
+    },
+    {
+      "start_time": 95.55,
+      "end_time": 96.525,
+      "sound_class": "Rail transport",
+      "confidence": 0.262,
+      "class_index": 322
+    },
+    {
+      "start_time": 95.55,
+      "end_time": 96.525,
+      "sound_class": "Railroad car, train wagon",
+      "confidence": 0.199,
+      "class_index": 326
+    },
+    {
+      "start_time": 95.55,
+      "end_time": 96.525,
+      "sound_class": "Train",
+      "confidence": 0.262,
+      "class_index": 323
+    },
+    {
+      "start_time": 95.55,
+      "end_time": 96.525,
+      "sound_class": "Vehicle",
+      "confidence": 0.5,
+      "class_index": 294
+    },
+    {
+      "start_time": 96.525,
+      "end_time": 104.325,
+      "sound_class": "Music",
+      "confidence": 0.996,
+      "class_index": 132
+    },
+    {
+      "start_time": 103.35,
+      "end_time": 104.325,
+      "sound_class": "Smash, crash",
+      "confidence": 0.414,
+      "class_index": 463
+    },
+    {
+      "start_time": 103.35,
+      "end_time": 104.325,
+      "sound_class": "Whack, thwack",
+      "confidence": 0.199,
+      "class_index": 462
+    },
+    {
+      "start_time": 104.325,
+      "end_time": 110.175,
+      "sound_class": "Music",
+      "confidence": 0.941,
+      "class_index": 132
+    },
+    {
+      "start_time": 111.15,
+      "end_time": 125.775,
+      "sound_class": "Music",
+      "confidence": 0.98,
+      "class_index": 132
+    },
+    {
+      "start_time": 126.75,
+      "end_time": 127.725,
+      "sound_class": "Music",
+      "confidence": 0.586,
+      "class_index": 132
+    },
+    {
+      "start_time": 126.75,
+      "end_time": 127.725,
+      "sound_class": "Smash, crash",
+      "confidence": 0.332,
+      "class_index": 463
+    },
+    {
+      "start_time": 126.75,
+      "end_time": 127.725,
+      "sound_class": "Whack, thwack",
+      "confidence": 0.199,
+      "class_index": 462
+    },
+    {
+      "start_time": 127.725,
+      "end_time": 130.65,
+      "sound_class": "Music",
+      "confidence": 0.668,
+      "class_index": 132
+    },
+    {
+      "start_time": 129.675,
+      "end_time": 130.65,
+      "sound_class": "Smash, crash",
+      "confidence": 0.199,
+      "class_index": 463
+    },
+    {
+      "start_time": 130.65,
+      "end_time": 131.625,
+      "sound_class": "Music",
+      "confidence": 0.199,
+      "class_index": 132
+    },
+    {
+      "start_time": 132.6,
+      "end_time": 135.525,
+      "sound_class": "Music",
+      "confidence": 0.801,
+      "class_index": 132
+    },
+    {
+      "start_time": 136.5,
+      "end_time": 140.4,
+      "sound_class": "Music",
+      "confidence": 0.941,
+      "class_index": 132
+    },
+    {
+      "start_time": 140.4,
+      "end_time": 141.375,
+      "sound_class": "Speech",
+      "confidence": 0.262,
+      "class_index": 0
+    },
+    {
+      "start_time": 141.375,
+      "end_time": 146.25,
+      "sound_class": "Music",
+      "confidence": 0.586,
+      "class_index": 132
+    },
+    {
+      "start_time": 149.175,
+      "end_time": 150.15,
+      "sound_class": "Aircraft",
+      "confidence": 0.414,
+      "class_index": 329
+    },
+    {
+      "start_time": 149.175,
+      "end_time": 150.15,
+      "sound_class": "Helicopter",
+      "confidence": 0.414,
+      "class_index": 333
+    },
+    {
+      "start_time": 149.175,
+      "end_time": 150.15,
+      "sound_class": "Vehicle",
+      "confidence": 0.586,
+      "class_index": 294
+    },
+    {
+      "start_time": 151.125,
+      "end_time": 152.1,
+      "sound_class": "Music",
+      "confidence": 0.586,
+      "class_index": 132
+    },
+    {
+      "start_time": 154.05,
+      "end_time": 157.95,
+      "sound_class": "Speech",
+      "confidence": 0.891,
+      "class_index": 0
+    },
+    {
+      "start_time": 163.8,
+      "end_time": 164.775,
+      "sound_class": "Music",
+      "confidence": 0.332,
+      "class_index": 132
+    },
+    {
+      "start_time": 166.725,
+      "end_time": 172.575,
+      "sound_class": "Speech",
+      "confidence": 0.891,
+      "class_index": 0
+    },
+    {
+      "start_time": 172.575,
+      "end_time": 173.55,
+      "sound_class": "Music",
+      "confidence": 0.262,
+      "class_index": 132
+    },
+    {
+      "start_time": 172.575,
+      "end_time": 176.475,
+      "sound_class": "Speech",
+      "confidence": 0.801,
+      "class_index": 0
+    },
+    {
+      "start_time": 177.45,
+      "end_time": 179.4,
+      "sound_class": "Speech",
+      "confidence": 0.414,
+      "class_index": 0
+    },
+    {
+      "start_time": 179.4,
+      "end_time": 180.375,
+      "sound_class": "Music",
+      "confidence": 0.199,
+      "class_index": 132
+    },
+    {
+      "start_time": 181.35,
+      "end_time": 182.325,
+      "sound_class": "Music",
+      "confidence": 0.332,
+      "class_index": 132
+    },
+    {
+      "start_time": 182.325,
+      "end_time": 184.275,
+      "sound_class": "Speech",
+      "confidence": 0.891,
+      "class_index": 0
+    },
+    {
+      "start_time": 184.275,
+      "end_time": 204.75,
+      "sound_class": "Silence",
+      "confidence": 0.801,
+      "class_index": 494
+    }
+  ]
+}

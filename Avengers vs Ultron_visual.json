@@ -1,0 +1,365 @@
+{
+  "video": "Avengers vs Ultron.mp4",
+  "duration": 204.2,
+  "total_events": 68,
+  "events": [
+    {
+      "time": 0.5,
+      "type": "action",
+      "action": "fall_down"
+    },
+    {
+      "time": 0.5,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 0.9,
+      "type": "action",
+      "action": "fall_down"
+    },
+    {
+      "time": 0.9,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 1.4,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 1.9,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 2.3,
+      "type": "action",
+      "action": "fall_down"
+    },
+    {
+      "time": 2.3,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 2.8,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 3.3,
+      "type": "scene_change",
+      "score": 1985.4
+    },
+    {
+      "time": 6.1,
+      "type": "scene_change",
+      "score": 57.6
+    },
+    {
+      "time": 6.5,
+      "type": "scene_change",
+      "score": 81.4
+    },
+    {
+      "time": 8.4,
+      "type": "action",
+      "action": "fall_down"
+    },
+    {
+      "time": 8.9,
+      "type": "action",
+      "action": "fall_down"
+    },
+    {
+      "time": 18.2,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 18.7,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 19.2,
+      "type": "action",
+      "action": "fall_down"
+    },
+    {
+      "time": 19.2,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 19.6,
+      "type": "action",
+      "action": "fall_down"
+    },
+    {
+      "time": 19.6,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 20.1,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 20.6,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 21.0,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 24.3,
+      "type": "object",
+      "object": "helicopter",
+      "label": "mixing bowl",
+      "confidence": 0.316
+    },
+    {
+      "time": 28.5,
+      "type": "scene_change",
+      "score": 59.5
+    },
+    {
+      "time": 29.0,
+      "type": "action",
+      "action": "fall_down"
+    },
+    {
+      "time": 32.2,
+      "type": "scene_change",
+      "score": 43.9
+    },
+    {
+      "time": 35.5,
+      "type": "object",
+      "object": "dog",
+      "label": "American black bear, black bear, Ursus americanus, Euarctos americanus",
+      "confidence": 0.495
+    },
+    {
+      "time": 35.5,
+      "type": "object",
+      "object": "cat",
+      "label": "American black bear, black bear, Ursus americanus, Euarctos americanus",
+      "confidence": 0.495
+    },
+    {
+      "time": 37.4,
+      "type": "scene_change",
+      "score": 575.2
+    },
+    {
+      "time": 44.8,
+      "type": "scene_change",
+      "score": 290.8
+    },
+    {
+      "time": 46.2,
+      "type": "object",
+      "object": "helicopter",
+      "label": "modem",
+      "confidence": 0.431
+    },
+    {
+      "time": 46.7,
+      "type": "object",
+      "object": "helicopter",
+      "label": "modem",
+      "confidence": 0.423
+    },
+    {
+      "time": 47.2,
+      "type": "object",
+      "object": "helicopter",
+      "label": "modem",
+      "confidence": 0.637
+    },
+    {
+      "time": 47.6,
+      "type": "object",
+      "object": "helicopter",
+      "label": "modem",
+      "confidence": 0.465
+    },
+    {
+      "time": 48.1,
+      "type": "scene_change",
+      "score": 61.0
+    },
+    {
+      "time": 56.1,
+      "type": "object",
+      "object": "helicopter",
+      "label": "modem",
+      "confidence": 0.31
+    },
+    {
+      "time": 61.7,
+      "type": "scene_change",
+      "score": 1091.5
+    },
+    {
+      "time": 62.1,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 62.6,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 63.1,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 73.8,
+      "type": "scene_change",
+      "score": 108.2
+    },
+    {
+      "time": 81.7,
+      "type": "action",
+      "action": "fall_down"
+    },
+    {
+      "time": 82.2,
+      "type": "action",
+      "action": "fall_down"
+    },
+    {
+      "time": 83.1,
+      "type": "scene_change",
+      "score": 47.6
+    },
+    {
+      "time": 85.0,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 87.4,
+      "type": "scene_change",
+      "score": 154.7
+    },
+    {
+      "time": 111.6,
+      "type": "object",
+      "object": "dog",
+      "label": "Appenzeller",
+      "confidence": 0.659
+    },
+    {
+      "time": 112.6,
+      "type": "action",
+      "action": "fall_down"
+    },
+    {
+      "time": 114.9,
+      "type": "action",
+      "action": "fall_down"
+    },
+    {
+      "time": 125.2,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 128.5,
+      "type": "scene_change",
+      "score": 41.4
+    },
+    {
+      "time": 129.9,
+      "type": "scene_change",
+      "score": 120.8
+    },
+    {
+      "time": 134.1,
+      "type": "scene_change",
+      "score": 98.9
+    },
+    {
+      "time": 135.5,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 137.8,
+      "type": "scene_change",
+      "score": 77.1
+    },
+    {
+      "time": 151.8,
+      "type": "scene_change",
+      "score": 43.4
+    },
+    {
+      "time": 165.8,
+      "type": "action",
+      "action": "fall_down"
+    },
+    {
+      "time": 169.6,
+      "type": "action",
+      "action": "punching"
+    },
+    {
+      "time": 170.5,
+      "type": "scene_change",
+      "score": 128.1
+    },
+    {
+      "time": 171.9,
+      "type": "scene_change",
+      "score": 99.4
+    },
+    {
+      "time": 173.3,
+      "type": "scene_change",
+      "score": 2631.0
+    },
+    {
+      "time": 176.1,
+      "type": "scene_change",
+      "score": 505.2
+    },
+    {
+      "time": 176.6,
+      "type": "scene_change",
+      "score": 685.1
+    },
+    {
+      "time": 179.4,
+      "type": "scene_change",
+      "score": 97.9
+    },
+    {
+      "time": 181.7,
+      "type": "scene_change",
+      "score": 58.8
+    },
+    {
+      "time": 184.1,
+      "type": "scene_change",
+      "score": 206.3
+    },
+    {
+      "time": 184.5,
+      "type": "scene_change",
+      "score": 46.5
+    }
+  ]
+}
