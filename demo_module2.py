@@ -1,13 +1,3 @@
-#!/usr/bin/env python3
-"""
-Module 2: Visual Scene/Action Detection.
-
-Detects objects, actions, and scene changes from video using:
-- MediaPipe Image Classifier -> object/scene classification
-- MediaPipe Pose -> body actions (fall down, punching)
-- Histogram comparison -> scene changes
-"""
-
 import sys, os, json, urllib.request
 
 import cv2

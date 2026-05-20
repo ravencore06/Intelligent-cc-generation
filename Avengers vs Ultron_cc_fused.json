@@ -1,14 +1,5 @@
 [
   {
-    "start_time": 0.0,
-    "end_time": 1.0,
-    "caption": "[Music] (41%); [Speech] (80%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.801,
-    "priority": 5
-  },
-  {
     "start_time": 0.5,
     "end_time": 4.3,
     "caption": "\u26a1 Fall Down",
@@ -36,24 +27,6 @@
     "priority": 2
   },
   {
-    "start_time": 4.8,
-    "end_time": 5.8,
-    "caption": "[Music] (26%); [Speech] (80%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.801,
-    "priority": 5
-  },
-  {
-    "start_time": 6.825,
-    "end_time": 7.825,
-    "caption": "[Smash, crash] (20%)",
-    "event_type": "audio",
-    "source_label": "Smash, crash",
-    "confidence": 0.199,
-    "priority": 3
-  },
-  {
     "start_time": 8.4,
     "end_time": 10.9,
     "caption": "\u26a1 Fall Down",
@@ -61,42 +34,6 @@
     "source_label": "fall_down",
     "confidence": 1.0,
     "priority": 1
-  },
-  {
-    "start_time": 11.7,
-    "end_time": 12.7,
-    "caption": "[Smash, crash] (33%)",
-    "event_type": "audio",
-    "source_label": "Smash, crash",
-    "confidence": 0.332,
-    "priority": 3
-  },
-  {
-    "start_time": 12.675,
-    "end_time": 15.6,
-    "caption": "[Music] (89%); [Speech] (74%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.891,
-    "priority": 5
-  },
-  {
-    "start_time": 16.575,
-    "end_time": 17.575,
-    "caption": "[Music] (50%); [Speech] (67%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.668,
-    "priority": 5
-  },
-  {
-    "start_time": 17.55,
-    "end_time": 18.55,
-    "caption": "[Music] (26%); [Speech] (85%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.852,
-    "priority": 5
   },
   {
     "start_time": 18.2,
@@ -117,15 +54,6 @@
     "priority": 1
   },
   {
-    "start_time": 20.2,
-    "end_time": 21.6,
-    "caption": "[Speech] (94%)",
-    "event_type": "audio",
-    "source_label": "Speech",
-    "confidence": 0.941,
-    "priority": 5
-  },
-  {
     "start_time": 21.6,
     "end_time": 23.0,
     "caption": "\u26a1 Punching",
@@ -136,7 +64,7 @@
   },
   {
     "start_time": 24.3,
-    "end_time": 25.3,
+    "end_time": 25.8,
     "caption": "\ud83d\udc41 helicopter (mixing bowl)",
     "event_type": "visual_object",
     "source_label": "helicopter",
@@ -144,40 +72,13 @@
     "priority": 3
   },
   {
-    "start_time": 24.375,
-    "end_time": 25.375,
-    "caption": "[Gunshot, gunfire] (20%)",
-    "event_type": "audio",
-    "source_label": "Gunshot, gunfire",
-    "confidence": 0.199,
-    "priority": 1
-  },
-  {
-    "start_time": 26.325,
-    "end_time": 27.325,
-    "caption": "[Fusillade] (20%)",
-    "event_type": "audio",
-    "source_label": "Fusillade",
-    "confidence": 0.199,
-    "priority": 3
-  },
-  {
-    "start_time": 28.275,
+    "start_time": 29.0,
     "end_time": 31.0,
-    "caption": "[Explosion] (26%); [Gunshot, gunfire] (20%); \u26a1 Fall Down",
-    "event_type": "audio",
-    "source_label": "Explosion",
+    "caption": "\u26a1 Fall Down",
+    "event_type": "visual_action",
+    "source_label": "fall_down",
     "confidence": 1.0,
     "priority": 1
-  },
-  {
-    "start_time": 31.0,
-    "end_time": 33.15,
-    "caption": "[Speech] (98%)",
-    "event_type": "audio",
-    "source_label": "Speech",
-    "confidence": 0.98,
-    "priority": 5
   },
   {
     "start_time": 35.5,
@@ -189,58 +90,13 @@
     "priority": 3
   },
   {
-    "start_time": 37.0,
-    "end_time": 38.025,
-    "caption": "[Music] (50%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.5,
-    "priority": 5
-  },
-  {
-    "start_time": 38.025,
-    "end_time": 39.025,
-    "caption": "[Speech] (26%)",
-    "event_type": "audio",
-    "source_label": "Speech",
-    "confidence": 0.262,
-    "priority": 5
-  },
-  {
-    "start_time": 39.975,
-    "end_time": 40.975,
-    "caption": "[Music] (41%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.414,
-    "priority": 5
-  },
-  {
-    "start_time": 44.85,
-    "end_time": 45.85,
-    "caption": "[Explosion] (20%); [Gunshot, gunfire] (26%)",
-    "event_type": "audio",
-    "source_label": "Explosion",
-    "confidence": 0.262,
-    "priority": 1
-  },
-  {
-    "start_time": 45.825,
+    "start_time": 46.2,
     "end_time": 49.1,
-    "caption": "[Vehicle] (20%); \ud83d\udc41 helicopter (modem)",
-    "event_type": "audio",
-    "source_label": "Vehicle",
-    "confidence": 0.637,
+    "caption": "\ud83d\udc41 helicopter (modem)",
+    "event_type": "visual_object",
+    "source_label": "helicopter",
+    "confidence": 0.431,
     "priority": 3
-  },
-  {
-    "start_time": 49.725,
-    "end_time": 55.725,
-    "caption": "[Speech] (97%)",
-    "event_type": "audio",
-    "source_label": "Speech",
-    "confidence": 0.969,
-    "priority": 5
   },
   {
     "start_time": 56.1,
@@ -261,184 +117,22 @@
     "priority": 2
   },
   {
-    "start_time": 65.1,
-    "end_time": 66.1,
-    "caption": "[Walk, footsteps] (33%)",
-    "event_type": "audio",
-    "source_label": "Walk, footsteps",
-    "confidence": 0.332,
-    "priority": 3
-  },
-  {
-    "start_time": 65.325,
-    "end_time": 66.325,
-    "caption": "[Speech] (74%)",
-    "event_type": "audio",
-    "source_label": "Speech",
-    "confidence": 0.738,
-    "priority": 5
-  },
-  {
-    "start_time": 66.3,
-    "end_time": 67.3,
-    "caption": "[Roar] (26%); [Roaring cats (lions, tigers)] (26%)",
-    "event_type": "audio",
-    "source_label": "Roar",
-    "confidence": 0.262,
-    "priority": 3
-  },
-  {
-    "start_time": 67.275,
-    "end_time": 68.275,
-    "caption": "[Car] (26%); [Motor vehicle (road)] (26%); [Vehicle] (41%)",
-    "event_type": "audio",
-    "source_label": "Car",
-    "confidence": 0.414,
-    "priority": 3
-  },
-  {
-    "start_time": 69.225,
-    "end_time": 70.225,
-    "caption": "[Vehicle] (33%)",
-    "event_type": "audio",
-    "source_label": "Vehicle",
-    "confidence": 0.332,
-    "priority": 3
-  },
-  {
-    "start_time": 71.175,
-    "end_time": 72.175,
-    "caption": "[Music] (20%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.199,
-    "priority": 5
-  },
-  {
-    "start_time": 72.15,
-    "end_time": 73.15,
-    "caption": "[Vehicle] (20%)",
-    "event_type": "audio",
-    "source_label": "Vehicle",
-    "confidence": 0.199,
-    "priority": 3
-  },
-  {
-    "start_time": 74.1,
-    "end_time": 75.1,
-    "caption": "[Thump, thud] (26%)",
-    "event_type": "audio",
-    "source_label": "Thump, thud",
-    "confidence": 0.262,
-    "priority": 3
-  },
-  {
-    "start_time": 75.075,
-    "end_time": 76.075,
-    "caption": "[Explosion] (26%); [Gunshot, gunfire] (26%)",
-    "event_type": "audio",
-    "source_label": "Explosion",
-    "confidence": 0.262,
-    "priority": 1
-  },
-  {
-    "start_time": 76.05,
-    "end_time": 77.05,
-    "caption": "[Explosion] (50%); [Gunshot, gunfire] (67%)",
-    "event_type": "audio",
-    "source_label": "Explosion",
-    "confidence": 0.668,
-    "priority": 1
-  },
-  {
-    "start_time": 78.975,
-    "end_time": 79.975,
-    "caption": "[Arrow] (41%); [Thump, thud] (50%)",
-    "event_type": "audio",
-    "source_label": "Arrow",
-    "confidence": 0.5,
-    "priority": 3
-  },
-  {
-    "start_time": 80.925,
+    "start_time": 81.7,
     "end_time": 84.2,
-    "caption": "[Breaking] (33%); [Glass] (33%); \u26a1 Fall Down",
-    "event_type": "audio",
-    "source_label": "Breaking",
+    "caption": "\u26a1 Fall Down",
+    "event_type": "visual_action",
+    "source_label": "fall_down",
     "confidence": 1.0,
     "priority": 1
   },
   {
-    "start_time": 84.2,
-    "end_time": 85.2,
-    "caption": "[Thump, thud] (20%)",
-    "event_type": "audio",
-    "source_label": "Thump, thud",
-    "confidence": 0.199,
-    "priority": 3
-  },
-  {
-    "start_time": 84.825,
-    "end_time": 85.825,
-    "caption": "[Explosion] (20%); [Gunshot, gunfire] (33%)",
-    "event_type": "audio",
-    "source_label": "Explosion",
-    "confidence": 0.332,
-    "priority": 1
-  },
-  {
-    "start_time": 85.8,
+    "start_time": 85.0,
     "end_time": 87.0,
     "caption": "\u26a1 Punching",
     "event_type": "visual_action",
     "source_label": "punching",
     "confidence": 1.0,
     "priority": 2
-  },
-  {
-    "start_time": 95.55,
-    "end_time": 96.55,
-    "caption": "[Rail transport] (26%); [Railroad car, train wagon] (20%); [Train] (26%); [Vehicle] (50%)",
-    "event_type": "audio",
-    "source_label": "Rail transport",
-    "confidence": 0.5,
-    "priority": 3
-  },
-  {
-    "start_time": 96.525,
-    "end_time": 102.525,
-    "caption": "[Music] (100%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.996,
-    "priority": 5
-  },
-  {
-    "start_time": 103.35,
-    "end_time": 104.35,
-    "caption": "[Smash, crash] (41%); [Whack, thwack] (20%)",
-    "event_type": "audio",
-    "source_label": "Smash, crash",
-    "confidence": 0.414,
-    "priority": 3
-  },
-  {
-    "start_time": 104.325,
-    "end_time": 110.175,
-    "caption": "[Music] (94%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.941,
-    "priority": 5
-  },
-  {
-    "start_time": 111.15,
-    "end_time": 112.15,
-    "caption": "[Music] (98%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.98,
-    "priority": 5
   },
   {
     "start_time": 111.6,
@@ -477,51 +171,6 @@
     "priority": 2
   },
   {
-    "start_time": 127.2,
-    "end_time": 128.2,
-    "caption": "[Smash, crash] (33%); [Whack, thwack] (20%)",
-    "event_type": "audio",
-    "source_label": "Smash, crash",
-    "confidence": 0.332,
-    "priority": 3
-  },
-  {
-    "start_time": 127.725,
-    "end_time": 129.675,
-    "caption": "[Music] (67%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.668,
-    "priority": 5
-  },
-  {
-    "start_time": 129.675,
-    "end_time": 130.675,
-    "caption": "[Smash, crash] (20%)",
-    "event_type": "audio",
-    "source_label": "Smash, crash",
-    "confidence": 0.199,
-    "priority": 3
-  },
-  {
-    "start_time": 130.65,
-    "end_time": 131.65,
-    "caption": "[Music] (20%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.199,
-    "priority": 5
-  },
-  {
-    "start_time": 132.6,
-    "end_time": 135.5,
-    "caption": "[Music] (80%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.801,
-    "priority": 5
-  },
-  {
     "start_time": 135.5,
     "end_time": 137.5,
     "caption": "\u26a1 Punching",
@@ -529,69 +178,6 @@
     "source_label": "punching",
     "confidence": 1.0,
     "priority": 2
-  },
-  {
-    "start_time": 137.5,
-    "end_time": 140.4,
-    "caption": "[Music] (94%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.941,
-    "priority": 5
-  },
-  {
-    "start_time": 140.4,
-    "end_time": 141.4,
-    "caption": "[Speech] (26%)",
-    "event_type": "audio",
-    "source_label": "Speech",
-    "confidence": 0.262,
-    "priority": 5
-  },
-  {
-    "start_time": 141.375,
-    "end_time": 146.25,
-    "caption": "[Music] (59%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.586,
-    "priority": 5
-  },
-  {
-    "start_time": 149.175,
-    "end_time": 150.175,
-    "caption": "[Aircraft] (41%); [Helicopter] (41%); [Vehicle] (59%)",
-    "event_type": "audio",
-    "source_label": "Aircraft",
-    "confidence": 0.586,
-    "priority": 3
-  },
-  {
-    "start_time": 151.125,
-    "end_time": 152.125,
-    "caption": "[Music] (59%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.586,
-    "priority": 5
-  },
-  {
-    "start_time": 154.05,
-    "end_time": 157.95,
-    "caption": "[Speech] (89%)",
-    "event_type": "audio",
-    "source_label": "Speech",
-    "confidence": 0.891,
-    "priority": 5
-  },
-  {
-    "start_time": 163.8,
-    "end_time": 164.8,
-    "caption": "[Music] (33%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.332,
-    "priority": 5
   },
   {
     "start_time": 165.8,
@@ -603,15 +189,6 @@
     "priority": 1
   },
   {
-    "start_time": 167.8,
-    "end_time": 169.6,
-    "caption": "[Speech] (89%)",
-    "event_type": "audio",
-    "source_label": "Speech",
-    "confidence": 0.891,
-    "priority": 5
-  },
-  {
     "start_time": 169.6,
     "end_time": 171.6,
     "caption": "\u26a1 Punching",
@@ -621,57 +198,75 @@
     "priority": 2
   },
   {
-    "start_time": 172.575,
-    "end_time": 176.475,
-    "caption": "[Music] (26%); [Speech] (80%)",
+    "start_time": 183.3,
+    "end_time": 184.3,
+    "caption": "[Engine] (33%); [Idling] (20%); [Medium engine (mid frequency)] (20%)",
     "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.801,
-    "priority": 5
-  },
-  {
-    "start_time": 177.45,
-    "end_time": 179.4,
-    "caption": "[Speech] (41%)",
-    "event_type": "audio",
-    "source_label": "Speech",
-    "confidence": 0.414,
-    "priority": 5
-  },
-  {
-    "start_time": 179.4,
-    "end_time": 180.4,
-    "caption": "[Music] (20%)",
-    "event_type": "audio",
-    "source_label": "Music",
-    "confidence": 0.199,
-    "priority": 5
-  },
-  {
-    "start_time": 181.35,
-    "end_time": 182.35,
-    "caption": "[Music] (33%)",
-    "event_type": "audio",
-    "source_label": "Music",
+    "source_label": "Engine",
     "confidence": 0.332,
-    "priority": 5
-  },
-  {
-    "start_time": 182.325,
-    "end_time": 184.275,
-    "caption": "[Speech] (89%)",
-    "event_type": "audio",
-    "source_label": "Speech",
-    "confidence": 0.891,
-    "priority": 5
+    "priority": 3
   },
   {
     "start_time": 184.275,
-    "end_time": 190.275,
-    "caption": "[Silence] (80%)",
+    "end_time": 186.225,
+    "caption": "[Vehicle horn, car horn, honking] (41%)",
     "event_type": "audio",
-    "source_label": "Silence",
-    "confidence": 0.801,
-    "priority": 3
+    "source_label": "Vehicle horn, car horn, honking",
+    "confidence": 0.414,
+    "priority": 2
+  },
+  {
+    "start_time": 187.2,
+    "end_time": 188.2,
+    "caption": "[Vehicle horn, car horn, honking] (26%)",
+    "event_type": "audio",
+    "source_label": "Vehicle horn, car horn, honking",
+    "confidence": 0.262,
+    "priority": 2
+  },
+  {
+    "start_time": 188.175,
+    "end_time": 195.15,
+    "caption": "[Vehicle horn, car horn, honking] (33%)",
+    "event_type": "audio",
+    "source_label": "Vehicle horn, car horn, honking",
+    "confidence": 0.332,
+    "priority": 2
+  },
+  {
+    "start_time": 195.975,
+    "end_time": 196.975,
+    "caption": "[Vehicle horn, car horn, honking] (33%)",
+    "event_type": "audio",
+    "source_label": "Vehicle horn, car horn, honking",
+    "confidence": 0.332,
+    "priority": 2
+  },
+  {
+    "start_time": 196.95,
+    "end_time": 200.85,
+    "caption": "[Vehicle horn, car horn, honking] (41%)",
+    "event_type": "audio",
+    "source_label": "Vehicle horn, car horn, honking",
+    "confidence": 0.414,
+    "priority": 2
+  },
+  {
+    "start_time": 200.85,
+    "end_time": 201.85,
+    "caption": "[Vehicle horn, car horn, honking] (26%)",
+    "event_type": "audio",
+    "source_label": "Vehicle horn, car horn, honking",
+    "confidence": 0.262,
+    "priority": 2
+  },
+  {
+    "start_time": 201.825,
+    "end_time": 204.75,
+    "caption": "[Vehicle horn, car horn, honking] (33%)",
+    "event_type": "audio",
+    "source_label": "Vehicle horn, car horn, honking",
+    "confidence": 0.332,
+    "priority": 2
   }
 ]

@@ -121,10 +121,14 @@ class SoundEventDetector:
         model_path: str = "yamnet.tflite",
         confidence_threshold: float = 0.20,
         target_classes: Optional[List[str]] = None,
+        use_separation: bool = False,
+        use_noise_reduction: bool = False,
     ):
         self.model_path = model_path
         self.confidence_threshold = confidence_threshold
         self.target_classes = target_classes
+        self.use_separation = use_separation
+        self.use_noise_reduction = use_noise_reduction
         self._classifier: Optional[audio.AudioClassifier] = None
 
     # ------------------------------------------------------------------
@@ -137,22 +141,68 @@ class SoundEventDetector:
             raise ValueError(
                 "Input must be a .wav file. Use detect_from_video() for video files."
             )
-        result = self._detect(audio_path)
-        result.source_file = os.path.basename(audio_path)
-        return result
+        
+        import shutil
+        temp_items: list[str] = []
+        try:
+            current_path = audio_path
+
+            if self.use_separation:
+                inst_path, temp_dir = self._separate_audio(current_path)
+                temp_items.append(temp_dir)
+                current_path = inst_path
+
+            if self.use_noise_reduction:
+                denoised_path = self._reduce_noise(current_path)
+                temp_items.append(denoised_path)
+                current_path = denoised_path
+
+            result = self._detect(current_path)
+            result.source_file = os.path.basename(audio_path)
+            return result
+        finally:
+            for item in reversed(temp_items):
+                if os.path.isdir(item):
+                    shutil.rmtree(item, ignore_errors=True)
+                elif os.path.isfile(item):
+                    try:
+                        os.remove(item)
+                    except OSError:
+                        pass
 
     def detect_from_video(self, video_path: str) -> DetectionResult:
         """Extract audio from video, run detection, clean up temp file."""
+        import shutil
         with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:
             tmp_wav = tmp.name
+        
+        temp_items: list[str] = [tmp_wav]
         try:
             self._extract_audio(video_path, tmp_wav)
-            result = self._detect(tmp_wav)
+            current_path = tmp_wav
+
+            if self.use_separation:
+                inst_path, temp_dir = self._separate_audio(current_path)
+                temp_items.append(temp_dir)
+                current_path = inst_path
+
+            if self.use_noise_reduction:
+                denoised_path = self._reduce_noise(current_path)
+                temp_items.append(denoised_path)
+                current_path = denoised_path
+
+            result = self._detect(current_path)
             result.source_file = os.path.basename(video_path)
             return result
         finally:
-            if os.path.exists(tmp_wav):
-                os.remove(tmp_wav)
+            for item in reversed(temp_items):
+                if os.path.isdir(item):
+                    shutil.rmtree(item, ignore_errors=True)
+                elif os.path.isfile(item):
+                    try:
+                        os.remove(item)
+                    except OSError:
+                        pass
 
     def close(self) -> None:
         if self._classifier is not None:
@@ -164,6 +214,105 @@ class SoundEventDetector:
 
     def __exit__(self, *args):
         self.close()
+
+    @staticmethod
+    def _ensure_ffmpeg() -> None:
+        """Dynamically find and setup ffmpeg from imageio_ffmpeg if not in PATH."""
+        import shutil
+        if shutil.which("ffmpeg") is not None:
+            return
+            
+        try:
+            import imageio_ffmpeg
+            ffmpeg_exe = imageio_ffmpeg.get_ffmpeg_exe()
+        except ImportError:
+            return
+            
+        if not ffmpeg_exe or not os.path.exists(ffmpeg_exe):
+            return
+            
+        import tempfile
+        temp_dir = os.path.join(tempfile.gettempdir(), "intelligent_cc_ffmpeg")
+        os.makedirs(temp_dir, exist_ok=True)
+        
+        dest_name = "ffmpeg.exe" if os.name == "nt" else "ffmpeg"
+        ffmpeg_dest = os.path.join(temp_dir, dest_name)
+        
+        if not os.path.exists(ffmpeg_dest):
+            try:
+                shutil.copy(ffmpeg_exe, ffmpeg_dest)
+            except Exception:
+                pass
+                
+        if os.path.exists(ffmpeg_dest):
+            os.environ["PATH"] = temp_dir + os.pathsep + os.environ["PATH"]
+
+    def _separate_audio(self, wav_path: str) -> tuple[str, str]:
+        """Separate vocals and instrumental/background stems.
+        Returns a tuple of (instrumental_path, temp_dir_to_clean_up)
+        """
+        import tempfile
+        from audio_separator.separator import Separator
+
+        self._ensure_ffmpeg()
+
+        # Create a temp directory for outputs
+        temp_dir = tempfile.mkdtemp(prefix="cc_separation_")
+        
+        # Initialize separator
+        separator = Separator(output_dir=temp_dir)
+        separator.load_model(model_filename='UVR-MDX-NET-Inst_HQ_3.onnx')
+        
+        print(f"      Separating vocals/speech from background audio...")
+        outputs = separator.separate(wav_path)
+        
+        # outputs contains filenames. Find the instrumental stem
+        inst_file = None
+        for filename in outputs:
+            if "Instrumental" in filename:
+                inst_file = filename
+                break
+        
+        if not inst_file:
+            inst_file = outputs[0] if outputs else None
+            
+        if not inst_file:
+            raise RuntimeError("Audio stem separation failed, no output files generated.")
+            
+        inst_path = os.path.join(temp_dir, inst_file)
+        return inst_path, temp_dir
+
+    def _reduce_noise(self, wav_path: str) -> str:
+        """Apply spectral-gate noise reduction. Returns path to denoised WAV."""
+        import tempfile
+        import noisereduce as nr
+
+        sr, data = wavfile.read(wav_path)
+
+        if data.dtype == np.int16:
+            float_data = data.astype(np.float32) / np.iinfo(np.int16).max
+        elif data.dtype == np.int32:
+            float_data = data.astype(np.float32) / np.iinfo(np.int32).max
+        elif data.dtype == np.uint8:
+            float_data = data.astype(np.float32) / 255.0 * 2.0 - 1.0
+        else:
+            float_data = data.astype(np.float32)
+
+        if float_data.ndim > 1:
+            reduced = np.stack([
+                nr.reduce_noise(y=float_data[:, c], sr=sr, prop_decrease=0.8)
+                for c in range(float_data.shape[1])
+            ], axis=1)
+        else:
+            reduced = nr.reduce_noise(y=float_data, sr=sr, prop_decrease=0.8)
+
+        reduced = np.clip(reduced, -1.0, 1.0)
+        reduced_int16 = (reduced * np.iinfo(np.int16).max).astype(np.int16)
+
+        fd, out_path = tempfile.mkstemp(suffix="_denoised.wav")
+        os.close(fd)
+        wavfile.write(out_path, sr, reduced_int16)
+        return out_path
 
     # ------------------------------------------------------------------
     # Internal methods
@@ -186,7 +335,7 @@ class SoundEventDetector:
 
     @staticmethod
     def _extract_audio(video_path: str, output_wav: str) -> None:
-        from moviepy.editor import VideoFileClip
+        from moviepy import VideoFileClip
 
         with VideoFileClip(video_path) as clip:
             if clip.audio is None:

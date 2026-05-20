@@ -1,22 +1,3 @@
-#!/usr/bin/env python3
-"""
-End-to-end pipeline demo: audio + visual detection -> CC Decision Engine ->
-SRT/SLS caption file generation.
-
-Usage:
-  python demo_pipeline.py <video.mp4> [--speech <transcript.srt>]
-
-Examples:
-  # Use pre-existing JSON results
-  python demo_pipeline.py "Avengers vs Ultron.mp4" --reuse
-
-  # Re-run detection then fuse
-  python demo_pipeline.py "Avengers vs Ultron.mp4"
-
-  # Include speech transcript
-  python demo_pipeline.py video.mp4 --speech transcript.srt
-"""
-
 import sys
 import os
 import json
@@ -39,6 +20,7 @@ def run_pipeline(
     video_path: str,
     speech_srt_path: str = None,
     reuse: bool = False,
+    separate: bool = False,
 ):
     base = os.path.splitext(video_path)[0]
 
@@ -51,7 +33,7 @@ def run_pipeline(
         print("[1/3] Running Sound Event Detection (Module 1)...")
         from sound_event_detection import SoundEventDetector
 
-        detector = SoundEventDetector(confidence_threshold=0.15)
+        detector = SoundEventDetector(confidence_threshold=0.15, use_separation=separate)
         result = detector.detect_from_video(video_path)
         result.to_json(audio_json_path)
         audio_events = parse_audio_events(result.to_dict())
@@ -155,10 +137,15 @@ if __name__ == "__main__":
         action="store_true",
         help="Reuse existing _events.json and _visual.json instead of re-running detection",
     )
+    parser.add_argument(
+        "--separate",
+        action="store_true",
+        help="Separate vocals/dialogue from background audio before running classification",
+    )
     args = parser.parse_args()
 
     if not os.path.exists(args.video):
         print(f"File not found: {args.video}")
         sys.exit(1)
 
-    run_pipeline(args.video, speech_srt_path=args.speech, reuse=args.reuse)
+    run_pipeline(args.video, speech_srt_path=args.speech, reuse=args.reuse, separate=args.separate)
